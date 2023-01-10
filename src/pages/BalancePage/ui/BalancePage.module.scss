@@ -1,0 +1,18 @@
+.BalancePage {
+    margin-top: 1rem;
+}
+
+.buttons {
+    width: 30%;
+    min-width: max-content;
+}
+
+.BalancePageHeader {
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+
+.Btn {
+    min-width: 70px;
+}

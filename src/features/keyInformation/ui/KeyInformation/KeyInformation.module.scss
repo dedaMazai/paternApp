@@ -1,0 +1,13 @@
+.KeyInformation {
+    width: max-content;
+    padding: 20px;
+}
+
+.icon {
+    fill: var(--orange);
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}

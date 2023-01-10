@@ -1,0 +1,24 @@
+.BotWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.BotStatus {
+    position: relative;
+}
+
+.CircleStatus {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -8px;
+    background-color: var(--red);
+}
+
+.CircleStatus.active {
+    background-color: var(--green);
+}

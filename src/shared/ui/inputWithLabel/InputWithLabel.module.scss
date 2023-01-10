@@ -1,0 +1,71 @@
+.Wrapper {
+    width: fit-content;
+    min-width: 220px;
+}
+
+.Label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    color: var(--grey200);
+    margin-bottom: 2px;
+}
+
+.Content {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Symbol {
+    min-height: 22px;
+    position: absolute;
+    right: 10px;
+    min-width: fit-content;
+    padding: 5px;
+    background-color: transparent;
+    max-width: 20%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    color: var(--primary-color);
+}
+
+.StyledInput {
+    padding: 12px 64px 12px 16px;
+    padding: 12px 16px;
+    background-color: transparent;
+    border: 1px solid var(--grey200);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-color);
+    width: 100%;
+
+    &:focus {
+        border: 1px solid var(--grey100);
+    }
+
+    &::placeholder {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2%;
+        color: var(--grey100);
+    }
+
+    &:disabled {
+        border: 1px solid var(--grey200);
+
+        &::placeholder {
+            color: var(--grey200);
+        }
+    }
+}
+
+.Wrapper.fullWidth {
+    width: 100%;
+}

@@ -1,0 +1,49 @@
+.Tooltip {
+    width: max-content;
+    padding: 0;
+}
+
+.trigger {
+    background: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+}
+
+.text {
+    position: absolute;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    padding: 0 8px;
+}
+
+.wrapper {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.optionsBottomLeft {
+    top: 100%;
+    right: 0;
+}
+
+.optionsBottomRight {
+    top: 100%;
+    left: 0;
+}
+
+.optionsTopRight {
+    bottom: 100%;
+    left: 0;
+}
+
+.optionsTopLeft {
+    right: 0;
+    bottom: 100%;
+}

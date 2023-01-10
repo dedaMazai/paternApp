@@ -1,0 +1,49 @@
+.Navbar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: var(--navbar-height);
+    background: var(--inverted-bg-color);
+    align-items: center;
+    padding: 0 2rem;
+
+    @media (max-width: 500px) {
+        height: var(--navbar-height-two);
+    }
+}
+
+.links,
+.actions {
+    margin-left: auto;
+}
+
+.actionLogout {
+    @media (max-width: 500px) {
+        margin-left: auto;
+    }
+}
+
+.mainLink {
+    margin-right: 15px;
+}
+
+.appName {
+    width: var(--sidebar-width);
+}
+
+.currency {
+    margin-left: 3rem;
+
+    @media (max-width: 770px) {
+        display: none;
+    }
+}
+
+.rightLine {
+    border-right: 2px solid var(--primary-color);
+    padding-right: 16px;
+
+    @media (max-width: 1100px) {
+        display: none;
+    }
+}

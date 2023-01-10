@@ -1,0 +1,38 @@
+.notification {
+    min-height: 150px;
+    max-height: 300px;
+    width: 500px;
+    overflow-y: auto;
+
+    @media (max-width: 775px) {
+        width: 450px;
+    }
+
+    @media (max-width: 725px) {
+        width: 400px;
+    }
+
+    @media (max-width: 675px) {
+        width: 180px;
+    }
+
+    @media (max-width: 459px) {
+        width: 250px;
+    }
+}
+
+.trigger {
+    cursor: pointer;
+    color: var(--primary-color);
+    margin: 0.5rem 1rem 0;
+
+    &:hover {
+        opacity: 0.8;
+        fill-opacity: 80%;
+        stroke-opacity: 80%;
+    }
+}
+
+.NotificationList {
+    width: 100%;
+}

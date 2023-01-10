@@ -1,0 +1,100 @@
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    color: var(--primary-color);
+}
+
+.Label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    color: var(--grey200);
+}
+
+.CustomSelectWrapper {
+    position: relative;
+}
+
+.SelectedOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid var(--grey200);
+    border-radius: 4px;
+    padding: 12px 16px;
+    user-select: none;
+    min-width: 160px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.SelectedOption.isActiveList {
+    border: 1px solid var(--grey100);
+}
+
+.ImageWrapper {
+    width: 18px;
+    height: 18px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.ChevronWrapper {
+    max-height: 24px;
+    transition: all 0.3s ease 0s;
+    transform: rotate(0deg);
+}
+
+.ChevronWrapper.isActiveList {
+    transform: rotate(180deg);
+}
+
+.List {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(54px);
+    user-select: none;
+    padding: 12px 0;
+    background: var(--bg-color);
+    border: 1px solid var(--grey200);
+    border-radius: 4px;
+    z-index: 2;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.List.isActiveList {
+    border: 1px solid var(--grey100);
+}
+
+.Option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 16px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        cursor: pointer;
+        background: var(--inverted-bg-color);
+    }
+}
+
+.Wrapper.fullWidth {
+    width: 100%;
+}

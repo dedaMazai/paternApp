@@ -1,0 +1,38 @@
+.Card {
+    padding: 10px;
+    border-radius: 12px;
+    background: var(--inverted-bg-color);
+}
+
+.normal {
+    background: var(--bg-color);
+}
+
+.outlined {
+    border: 1px solid var(--grey200);
+    background: var(--bg-color);
+}
+
+.normal.inverted {
+    background: var(--inverted-bg-color);
+}
+
+.outlined.inverted {
+    border: 1px solid var(--secondary-color);
+    background: var(--inverted-bg-color);
+}
+
+.max {
+    width: 100%;
+}
+
+.Wrapper {
+    width: 100%;
+}
+
+.Label {
+    letter-spacing: 2%;
+    color: var(--grey200);
+    margin-bottom: 2px;
+    font: var(--font-m-main);
+}

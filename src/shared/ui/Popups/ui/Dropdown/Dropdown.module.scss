@@ -1,0 +1,20 @@
+.menu {
+    background: var(--card-bg);
+    position: absolute;
+    z-index: 10000;
+    border-radius: 8px;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    margin-top: -2px;
+}// border: 2px solid var(--secondary-color);
+
+.item {
+    padding: 10px 25px;
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
